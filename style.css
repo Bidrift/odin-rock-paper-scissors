@@ -8,6 +8,11 @@
 h1,
 h2 {
     text-shadow: 0 0 5px #0000008c;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
 }
 
 body {
@@ -20,11 +25,6 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-.result-screen,
-.rules-modal {
-    display: none;
 }
 
 header {
@@ -150,6 +150,55 @@ header {
     border: 20px solid #ff9634;
 }
 
+.result-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.human-choice,
+.result-section,
+.computer-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.human-choice,
+.computer-choice {
+    gap: 70px;
+}
+
+.result-section {
+    gap: 20px;
+}
+
+.result-text {
+    font-size: 64px;
+}
+
+.primary-button {
+    background-color: #FFF;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(229, 25%, 31%);
+    font-size: 18px;
+    letter-spacing: 5px;
+    box-shadow: 0 0 5px #0000008c;
+}
+
+.primary-button:hover {
+    color: hsl(307, 30%, 37%);
+}
+
 footer {
     align-self: stretch;
     display: flex;
@@ -171,4 +220,59 @@ footer {
     font-size: 18px;
     letter-spacing: 5px;
     font-weight: 400;
+}
+
+.secondary-button:hover {
+    background-color: hsl(217, 16%, 45%);
+}
+
+.rules-modal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background-color: #00000080;
+    backdrop-filter: blur(8px);
+}
+
+.rules-container {
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #0000008c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    color: hsl(229, 25%, 31%);
+    font-size: 28px;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-button {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.result-screen,
+.rules-modal {
+    display: none;
 }
