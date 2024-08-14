@@ -35,11 +35,6 @@ function playGame() {
         }
     }
 
-    for (let i = 0; i < 5; i++) {
-        playRound(getHumainChoice(), getComputerChoice());
-    }
-
     console.log(`Results: Player ${humanScore} - ${computerScore} Computer`)
 }
-
-playGame();
+//playGame();
