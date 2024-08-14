@@ -104,11 +104,15 @@ header {
     font-size: 64px;
 }
 
-.choice-screen {
+.main-screen {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
+    flex-wrap: wrap;
+}
+
+.choice-screen {
     width: 600px;
     gap: 70px 100px;
     flex-wrap: wrap;
@@ -155,7 +159,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    flex-wrap: wrap;
+    
 }
 
 .human-choice,
@@ -197,6 +201,16 @@ header {
 
 .primary-button:hover {
     color: hsl(307, 30%, 37%);
+}
+
+.end-screen {
+    flex-direction: column;
+}
+
+.winner {
+    font-size: 164px;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -270,9 +284,4 @@ footer {
     border: none;
     background: none;
     outline: none;
-}
-
-.result-screen,
-.rules-modal {
-    display: none;
 }
