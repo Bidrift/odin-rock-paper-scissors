@@ -1,0 +1,147 @@
+* {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+h1,
+h2 {
+    text-shadow: 0 0 5px #0000008c;
+}
+
+body {
+    background-image: radial-gradient(circle at 50% 0%, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.result-screen,
+.rules-modal {
+    display: none;
+}
+
+header {
+    margin-top: 50px;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 15px;
+    width: 800px;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 50px;
+}
+
+.left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-options {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.left-option {
+    margin: 0;
+    padding: 0;
+}
+
+.left-option h1 {
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: -10px;
+    padding: 0;
+}
+
+.left-option:last-of-type h1 {
+    margin-bottom: 0px;
+}
+
+.right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.score-container {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px #0000008c;
+}
+
+.score-text {
+    margin: 0;
+    padding: 20px 0 0 0;
+    color: hsl(229, 64%, 46%);
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.score {
+    margin: 0;
+    padding: 0;
+    color: hsl(229, 25%, 31%);
+    font-size: 64px;
+}
+
+.choice-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 600px;
+    gap: 70px 100px;
+    flex-wrap: wrap;
+}
+
+.choice-button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.choice-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    flex: 0 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #0000008c;
+}
+
+.choice-rock {
+    border: 20px solid #ff5a5a;
+}
+
+.choice-paper {
+    border: 20px solid #5a86ff;
+}
+
+.choice-scissors {
+    border: 20px solid #ff9634;
+}
